@@ -1,0 +1,149 @@
+@import './normalize.css';
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+header {
+  height: 70px;
+  background-color: rgb(231, 231, 231);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.headerWrap {
+  max-width: 1500px;
+  display: flex;
+  align-items: center;
+}
+
+.mainWrap {
+position: absolute;
+top: 80px;
+}
+.mainData {
+  margin: 0 10px;
+}
+/*//////////////////////////////////////////////////desktop*/
+@media screen and (min-width: 992px) {
+  
+.nav {
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid rgb(82, 81, 81);
+}
+
+.nav:hover {
+  background-color:  rgb(218, 216, 216);
+  border: 2px solid rgb(82, 81, 81);
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.mainWrap {
+  max-width: 1500px;
+  display: flex;
+  background-color: rgb(241, 239, 239);
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.listItem {
+  font-size: 14px;
+  margin: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.listItem:hover {
+  color: rgb(30, 99, 247);
+}
+
+.sublistItem {
+  margin-top: 20px;
+}
+
+.sublistItem:hover {
+  color: rgb(3, 50, 151);
+}
+
+.mobile {
+  display: none;
+}
+
+}
+/*//////////////////////////////////////////////////mobile*/
+@media screen and (max-width: 991px) {
+  .desktop, .closeMenuImg {
+    display: none;
+  }
+
+  .menuImg {
+    position: absolute;
+    margin: 10px;
+    margin-right: 15px;
+    right: 0px;
+  }
+  .closeMenuImg {
+    position: absolute;
+    margin: 10px;
+    margin-right: 15px;
+    right: 0px;
+  }
+
+  .mainWrap {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgb(241, 239, 239);
+    border: 1px solid black; 
+    border-radius: 20px;
+    }
+
+  .mobItem, .sublistItem {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 0px;
+    padding-left: 20px;
+    padding-right: 15px;
+    border-bottom: 1px solid black; 
+  }
+
+  .sublistItem {
+    padding-left: 40px;
+  }
+
+  .mobItem:last-child {
+    border-bottom: 0px solid black; 
+  }
+
+  .mobItem:hover, .sublistItem:hover  {
+    color:  rgb(89, 142, 255);
+    cursor: pointer;
+  }
+  .upArr {
+    width: 25px;
+  }
+  .downArr {
+    width: 25px;
+  }
+
+  .deepSublistItem {
+    padding-left: 60px;
+  }
+
+}
