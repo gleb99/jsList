@@ -78,12 +78,12 @@ mobMenu.onclick = () => {
     mainWrap.append(mobItem);
 
     const upArr = document.createElement('img');
-    upArr.src = '/images/upArr.png'; 
+    upArr.src = './images/upArr.png'; 
     upArr.className = 'upArr';
     mobItem.append(upArr);
 
     const downArr = document.createElement('img');
-    downArr.src = '/images/downArr.png'; 
+    downArr.src = './images/downArr.png'; 
     downArr.className = 'downArr';
     mobItem.append(downArr);
     downArr.style.display = 'none';
@@ -171,12 +171,12 @@ mainWrap.onclick = (event) => {
       res = res.join('');
       if (data[res]) {
         const upArr = document.createElement('img');
-        upArr.src = '/images/upArr.png'; 
+        upArr.src = './images/upArr.png'; 
         upArr.className = 'upArr';
         subListItem.append(upArr);
 
         const downArr = document.createElement('img');
-        downArr.src = '/images/downArr.png'; 
+        downArr.src = './images/downArr.png'; 
         downArr.className = 'downArr';
         subListItem.append(downArr);
         downArr.style.display = 'none';
