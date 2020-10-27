@@ -83,7 +83,7 @@ mobMenu.onclick = () => {
     mobItem.append(upArr);
 
     const downArr = document.createElement('img');
-    downArr.src = 'images/downArr.png'; 
+    downArr.src = '../images/downArr.png'; 
     downArr.className = 'downArr';
     mobItem.append(downArr);
     downArr.style.display = 'none';
